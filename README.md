@@ -2,14 +2,12 @@
 ### <center> **Refugee Analysis** </center>
 <br>
 This is analysis of global refugee data from 
-the years 1975-2016.
+the years 1951-2017.
 
-The aim of this was to clean and visualise the data
-in a dynamic format
+The aim of this was to prepare the data and visualise it in an easily interpretable format
 
-The open data source comes from 
-UNdata as linked below: 
-[Source Data Link](http://data.un.org/)
+The open data source comes from the link below: 
+[Source Data Link](http://popstats.unhcr.org)
 
 ___
 #### <center> **Project Status** </center>
