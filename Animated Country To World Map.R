@@ -73,7 +73,7 @@ CountryToAgg$Year2 <- round(CountryToAgg$Year)
 
 #----Pull The ggmap In & Format----#
 
-ggmap::register_google(key = "AIzaSyDYQKGvFscHLSBHWm8VSJ6O5LOne08gbCs")
+ggmap::register_google(key = "")
 
 map <-
   ggmap(
