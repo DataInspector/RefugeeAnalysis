@@ -1,0 +1,319 @@
+,BestScore,BestScoreCountry,Country,Clean
+0,25.0,Aruba,Afghanistan,Afghanistan
+1,36.0,Aruba,Angola,Angola
+2,56.0,Afghanistan,Albania,Albania
+3,62.0,Angola,Andorra,Andorra
+4,40.0,Aruba,Arab World,Arab World
+5,57.0,Arab World,United Arab Emirates,United Arab Emirates
+6,50.0,Afghanistan,Argentina,Argentina
+7,75.0,Argentina,Armenia,Armenia
+8,48.0,Armenia,American Samoa,American Samoa
+9,36.0,Argentina,Antigua and Barbuda,Antigua and Barbuda
+10,50.0,Albania,Australia,Australia
+11,88.0,Australia,Austria,Austria
+12,59.0,Albania,Azerbaijan,Azerbaijan
+13,43.0,Albania,Burundi,Burundi
+14,30.0,United Arab Emirates,Belgium,Belgium
+15,57.0,Argentina,Benin,Benin
+16,42.0,Austria,Burkina Faso,Burkina Faso
+17,62.0,Angola,Bangladesh,Bangladesh
+18,53.0,Albania,Bulgaria,Bulgaria
+19,56.0,Afghanistan,Bahrain,Bahrain
+20,44.0,Bahrain,"Bahamas, The","Bahamas, The"
+21,49.0,Antigua and Barbuda,Bosnia and Herzegovina,Bosnia and Herzegovina
+22,57.0,Belgium,Belarus,Belarus
+23,62.0,Belgium,Belize,Belize
+24,57.0,Burundi,Bermuda,Bermuda
+25,53.0,Bulgaria,Bolivia,Bolivia
+26,62.0,Bahrain,Brazil,Brazil
+27,56.0,Bangladesh,Barbados,Barbados
+28,50.0,Belarus,Brunei Darussalam,Brunei Darussalam
+29,62.0,Bahrain,Bhutan,Bhutan
+30,57.0,Bhutan,Botswana,Botswana
+31,42.0,American Samoa,Central African Republic,Central African Republic
+32,50.0,Angola,Canada,Canada
+33,52.0,Central African Republic,Central Europe and the Baltics,Central Europe and the Baltics
+34,48.0,Azerbaijan,Switzerland,Switzerland
+35,54.0,Afghanistan,Channel Islands,Channel Islands
+36,40.0,Channel Islands,Chile,Chile
+37,60.0,Chile,China,China
+38,40.0,Bolivia,Cote d'Ivoire,Cote d'Ivoire
+39,53.0,Armenia,Cameroon,Cameroon
+40,54.0,Cote d'Ivoire,"Congo, Dem. Rep.","Congo, Dem. Rep."
+41,100.0,"Congo, Dem. Rep.","Congo, Rep.","Congo, Dem. Rep."
+42,53.0,Albania,Colombia,Colombia
+43,53.0,Cameroon,Comoros,Comoros
+44,50.0,Arab World,Cabo Verde,Cabo Verde
+45,59.0,Austria,Costa Rica,Costa Rica
+46,50.0,American Samoa,Caribbean small states,Caribbean small states
+47,67.0,Aruba,Cuba,Cuba
+48,55.0,Cuba,Curacao,Curacao
+49,76.0,Channel Islands,Cayman Islands,Cayman Islands
+50,46.0,Belarus,Cyprus,Cyprus
+51,73.0,Central African Republic,Czech Republic,Czech Republic
+52,57.0,Bermuda,Germany,Germany
+53,43.0,Bhutan,Djibouti,Djibouti
+54,53.0,Armenia,Dominica,Dominica
+55,43.0,Armenia,Denmark,Denmark
+56,73.0,Czech Republic,Dominican Republic,Dominican Republic
+57,67.0,Bulgaria,Algeria,Algeria
+58,33.0,Bosnia and Herzegovina,East Asia & Pacific (excluding high income),East Asia & Pacific (excluding high income)
+59,36.0,Cote d'Ivoire,Early-demographic dividend,Early-demographic dividend
+60,100.0,East Asia & Pacific (excluding high income),East Asia & Pacific,East Asia & Pacific (excluding high income)
+61,80.0,East Asia & Pacific (excluding high income),Europe & Central Asia (excluding high income),Europe & Central Asia (excluding high income)
+62,100.0,Europe & Central Asia (excluding high income),Europe & Central Asia,Europe & Central Asia (excluding high income)
+63,57.0,Andorra,Ecuador,Ecuador
+64,57.0,Arab World,"Egypt, Arab Rep.","Egypt, Arab Rep."
+65,57.0,Europe & Central Asia,Euro area,Euro area
+66,57.0,Algeria,Eritrea,Eritrea
+67,50.0,Bahrain,Spain,Spain
+68,57.0,Armenia,Estonia,Estonia
+69,67.0,Estonia,Ethiopia,Ethiopia
+70,48.0,Burundi,European Union,European Union
+71,46.0,Central Europe and the Baltics,Fragile and conflict affected situations,Fragile and conflict affected situations
+72,56.0,Switzerland,Finland,Finland
+73,36.0,Bolivia,Fiji,Fiji
+74,46.0,Bahrain,France,France
+75,71.0,Channel Islands,Faroe Islands,Faroe Islands
+76,40.0,Caribbean small states,"Micronesia, Fed. Sts.","Micronesia, Fed. Sts."
+77,50.0,Albania,Gabon,Gabon
+78,60.0,United Arab Emirates,United Kingdom,United Kingdom
+79,71.0,Algeria,Georgia,Georgia
+80,62.0,Afghanistan,Ghana,Ghana
+81,53.0,Brazil,Gibraltar,Gibraltar
+82,55.0,China,Guinea,Guinea
+83,67.0,"Bahamas, The","Gambia, The","Gambia, The"
+84,100.0,Guinea,Guinea-Bissau,Guinea
+85,100.0,Guinea,Equatorial Guinea,Guinea
+86,50.0,France,Greece,Greece
+87,62.0,Canada,Grenada,Grenada
+88,75.0,Grenada,Greenland,Greenland
+89,56.0,Australia,Guatemala,Guatemala
+90,62.0,Guatemala,Guam,Guam
+91,73.0,Ghana,Guyana,Guyana
+92,100.0,East Asia & Pacific (excluding high income),High income,East Asia & Pacific (excluding high income)
+93,100.0,China,"Hong Kong SAR, China",China
+94,53.0,Andorra,Honduras,Honduras
+95,37.0,East Asia & Pacific (excluding high income),Heavily indebted poor countries (HIPC),Heavily indebted poor countries (HIPC)
+96,53.0,Colombia,Croatia,Croatia
+97,50.0,Afghanistan,Haiti,Haiti
+98,53.0,Bulgaria,Hungary,Hungary
+99,47.0,Barbados,IBRD only,IBRD only
+100,62.0,IBRD only,IDA & IBRD total,IDA & IBRD total
+101,100.0,IDA & IBRD total,IDA total,IDA & IBRD total
+102,57.0,Benin,IDA blend,IDA blend
+103,53.0,Guinea,Indonesia,Indonesia
+104,82.0,IBRD only,IDA only,IDA only
+105,44.0,Germany,Isle of Man,Isle of Man
+106,71.0,Indonesia,India,India
+107,39.0,East Asia & Pacific,Not classified,Not classified
+108,75.0,Greenland,Ireland,Ireland
+109,50.0,"Congo, Rep.","Iran, Islamic Rep.","Iran, Islamic Rep."
+110,55.0,Eritrea,Iraq,Iraq
+111,86.0,Ireland,Iceland,Iceland
+112,62.0,Ireland,Israel,Israel
+113,62.0,IDA only,Italy,Italy
+114,57.0,Albania,Jamaica,Jamaica
+115,50.0,France,Jordan,Jordan
+116,60.0,Spain,Japan,Japan
+117,57.0,Afghanistan,Kazakhstan,Kazakhstan
+118,50.0,Armenia,Kenya,Kenya
+119,73.0,Czech Republic,Kyrgyz Republic,Kyrgyz Republic
+120,62.0,Colombia,Cambodia,Cambodia
+121,53.0,Croatia,Kiribati,Kiribati
+122,50.0,"Micronesia, Fed. Sts.",St. Kitts and Nevis,St. Kitts and Nevis
+123,56.0,"Congo, Rep.","Korea, Rep.","Korea, Rep."
+124,55.0,Haiti,Kuwait,Kuwait
+125,100.0,High income,Latin America & Caribbean (excluding high income),High income
+126,47.0,Cabo Verde,Lao PDR,Lao PDR
+127,57.0,Albania,Lebanon,Lebanon
+128,71.0,Algeria,Liberia,Liberia
+129,67.0,Liberia,Libya,Libya
+130,50.0,Burkina Faso,St. Lucia,St. Lucia
+131,100.0,Latin America & Caribbean (excluding high income),Latin America & Caribbean,Latin America & Caribbean (excluding high income)
+132,46.0,Heavily indebted poor countries (HIPC),Least developed countries: UN classification,Least developed countries: UN classification
+133,75.0,East Asia & Pacific (excluding high income),Low income,Low income
+134,45.0,Argentina,Liechtenstein,Liechtenstein
+135,50.0,Albania,Sri Lanka,Sri Lanka
+136,75.0,Low income,Lower middle income,Lower middle income
+137,100.0,Low income,Low & middle income,Low income
+138,53.0,Ethiopia,Lesotho,Lesotho
+139,89.0,Early-demographic dividend,Late-demographic dividend,Late-demographic dividend
+140,62.0,Albania,Lithuania,Lithuania
+141,47.0,Georgia,Luxembourg,Luxembourg
+142,62.0,Albania,Latvia,Latvia
+143,100.0,China,"Macao SAR, China",China
+144,47.0,Argentina,St. Martin (French part),St. Martin (French part)
+145,57.0,Comoros,Morocco,Morocco
+146,62.0,Morocco,Monaco,Monaco
+147,57.0,Bolivia,Moldova,Moldova
+148,47.0,Jamaica,Madagascar,Madagascar
+149,56.0,Bangladesh,Maldives,Maldives
+150,54.0,Low & middle income,Middle East & North Africa,Middle East & North Africa
+151,50.0,American Samoa,Mexico,Mexico
+152,71.0,Channel Islands,Marshall Islands,Marshall Islands
+153,100.0,Lower middle income,Middle income,Lower middle income
+154,60.0,Armenia,"Macedonia, FYR","Macedonia, FYR"
+155,67.0,Maldives,Mali,Mali
+156,67.0,Mali,Malta,Malta
+157,62.0,Guyana,Myanmar,Myanmar
+158,100.0,High income,Middle East & North Africa (excluding high income),High income
+159,50.0,Monaco,Montenegro,Montenegro
+160,71.0,Angola,Mongolia,Mongolia
+161,70.0,Faroe Islands,Northern Mariana Islands,Northern Mariana Islands
+162,50.0,"Gambia, The",Mozambique,Mozambique
+163,63.0,Australia,Mauritania,Mauritania
+164,74.0,Mauritania,Mauritius,Mauritius
+165,80.0,Mali,Malawi,Malawi
+166,71.0,Malawi,Malaysia,Malaysia
+167,70.0,Latin America & Caribbean (excluding high income),North America,North America
+168,67.0,Cambodia,Namibia,Namibia
+169,54.0,"Macedonia, FYR",New Caledonia,New Caledonia
+170,50.0,Germany,Niger,Niger
+171,83.0,Niger,Nigeria,Nigeria
+172,53.0,Canada,Nicaragua,Nicaragua
+173,64.0,Switzerland,Netherlands,Netherlands
+174,62.0,Andorra,Norway,Norway
+175,55.0,Guinea,Nepal,Nepal
+176,60.0,Aruba,Nauru,Nauru
+177,64.0,Switzerland,New Zealand,New Zealand
+178,45.0,Montenegro,OECD members,OECD members
+179,60.0,Jordan,Oman,Oman
+180,80.0,Caribbean small states,Other small states,Other small states
+181,67.0,Kazakhstan,Pakistan,Pakistan
+182,67.0,Canada,Panama,Panama
+183,60.0,Cyprus,Peru,Peru
+184,50.0,Chile,Philippines,Philippines
+185,60.0,Malta,Palau,Palau
+186,100.0,Guinea,Papua New Guinea,Guinea
+187,62.0,Finland,Poland,Poland
+188,91.0,Early-demographic dividend,Pre-demographic dividend,Early-demographic dividend
+189,48.0,Costa Rica,Puerto Rico,Puerto Rico
+190,100.0,"Korea, Rep.","Korea, Dem. People’s Rep.","Korea, Rep."
+191,53.0,Georgia,Portugal,Portugal
+192,71.0,Nicaragua,Paraguay,Paraguay
+193,50.0,Bangladesh,West Bank and Gaza,West Bank and Gaza
+194,80.0,Other small states,Pacific island small states,Pacific island small states
+195,91.0,Pre-demographic dividend,Post-demographic dividend,Pre-demographic dividend
+196,56.0,Indonesia,French Polynesia,French Polynesia
+197,60.0,Malta,Qatar,Qatar
+198,73.0,Oman,Romania,Romania
+199,50.0,"Micronesia, Fed. Sts.",Russian Federation,Russian Federation
+200,67.0,Canada,Rwanda,Rwanda
+201,61.0,North America,South Asia,South Asia
+202,56.0,United Arab Emirates,Saudi Arabia,Saudi Arabia
+203,60.0,Spain,Sudan,Sudan
+204,67.0,Nepal,Senegal,Senegal
+205,56.0,"Congo, Rep.",Singapore,Singapore
+206,70.0,Faroe Islands,Solomon Islands,Solomon Islands
+207,57.0,IDA blend,Sierra Leone,Sierra Leone
+208,56.0,Ecuador,El Salvador,El Salvador
+209,60.0,Mauritania,San Marino,San Marino
+210,73.0,Mali,Somalia,Somalia
+211,62.0,Austria,Serbia,Serbia
+212,100.0,High income,Sub-Saharan Africa (excluding high income),High income
+213,100.0,Sudan,South Sudan,Sudan
+214,100.0,Sub-Saharan Africa (excluding high income),Sub-Saharan Africa,Sub-Saharan Africa (excluding high income)
+215,100.0,Caribbean small states,Small states,Caribbean small states
+216,54.0,Pacific island small states,Sao Tome and Principe,Sao Tome and Principe
+217,59.0,Singapore,Suriname,Suriname
+218,73.0,Czech Republic,Slovak Republic,Slovak Republic
+219,67.0,Estonia,Slovenia,Slovenia
+220,55.0,Sudan,Sweden,Sweden
+221,67.0,Estonia,Eswatini,Eswatini
+222,73.0,St. Martin (French part),Sint Maarten (Dutch part),Sint Maarten (Dutch part)
+223,53.0,Chile,Seychelles,Seychelles
+224,73.0,Czech Republic,Syrian Arab Republic,Syrian Arab Republic
+225,70.0,Faroe Islands,Turks and Caicos Islands,Turks and Caicos Islands
+226,67.0,China,Chad,Chad
+227,100.0,East Asia & Pacific,East Asia & Pacific (IDA & IBRD countries),East Asia & Pacific
+228,100.0,Europe & Central Asia,Europe & Central Asia (IDA & IBRD countries),Europe & Central Asia
+229,50.0,Mongolia,Togo,Togo
+230,67.0,Finland,Thailand,Thailand
+231,78.0,Pakistan,Tajikistan,Tajikistan
+232,64.0,Tajikistan,Turkmenistan,Turkmenistan
+233,100.0,Latin America & Caribbean,Latin America & the Caribbean (IDA & IBRD countries),Latin America & Caribbean
+234,56.0,Lesotho,Timor-Leste,Timor-Leste
+235,100.0,Middle East & North Africa,Middle East & North Africa (IDA & IBRD countries),Middle East & North Africa
+236,67.0,Estonia,Tonga,Tonga
+237,100.0,South Asia,South Asia (IDA & IBRD),South Asia
+238,100.0,Sub-Saharan Africa,Sub-Saharan Africa (IDA & IBRD countries),Sub-Saharan Africa
+239,54.0,Bosnia and Herzegovina,Trinidad and Tobago,Trinidad and Tobago
+240,63.0,Turkmenistan,Tunisia,Tunisia
+241,56.0,Turkmenistan,Turkey,Turkey
+242,57.0,Portugal,Tuvalu,Tuvalu
+243,67.0,Albania,Tanzania,Tanzania
+244,73.0,Ghana,Uganda,Uganda
+245,67.0,Suriname,Ukraine,Ukraine
+246,100.0,Middle income,Upper middle income,Middle income
+247,67.0,Paraguay,Uruguay,Uruguay
+248,67.0,United Arab Emirates,United States,United States
+249,67.0,Pakistan,Uzbekistan,Uzbekistan
+250,54.0,Central Europe and the Baltics,St. Vincent and the Grenadines,St. Vincent and the Grenadines
+251,52.0,New Zealand,"Venezuela, RB","Venezuela, RB"
+252,70.0,Faroe Islands,British Virgin Islands,British Virgin Islands
+253,88.0,British Virgin Islands,Virgin Islands (U.S.),Virgin Islands (U.S.)
+254,53.0,Suriname,Vietnam,Vietnam
+255,50.0,Aruba,Vanuatu,Vanuatu
+256,100.0,Arab World,World,Arab World
+257,100.0,American Samoa,Samoa,American Samoa
+258,46.0,Lesotho,Kosovo,Kosovo
+259,56.0,"Congo, Rep.","Yemen, Rep.","Yemen, Rep."
+260,82.0,South Asia,South Africa,South Africa
+261,77.0,Namibia,Zambia,Zambia
+262,57.0,Zambia,Zimbabwe,Zimbabwe
+263,100.0,"Yemen, Rep.",Yemen,"Yemen, Rep."
+264,53.0,Northern Mariana Islands,Western Sahara,Western Sahara
+265,53.0,Namibia,Viet Nam,Viet Nam
+266,86.0,"Venezuela, RB",Venezuela (Bolivarian Republic of),Venezuela (Bolivarian Republic of)
+267,62.0,Mauritius,Various,Various
+268,100.0,Tanzania,United Rep. of Tanzania,Tanzania
+269,57.0,Bhutan,Tibetans,Tibetans
+270,82.0,"Macedonia, FYR",The former Yugoslav Rep. of Macedonia,The former Yugoslav Rep. of Macedonia
+271,86.0,Syrian Arab Republic,Syrian Arab Rep.,Syrian Arab Rep.
+272,71.0,Thailand,Swaziland,Swaziland
+273,57.0,Small states,Stateless,Stateless
+274,56.0,Other small states,State of Palestine,State of Palestine
+275,75.0,Slovenia,Slovakia,Slovakia
+276,100.0,Serbia,Serbia (and Kosovo: S/RES/1244 (1999)),Serbia
+277,95.0,St. Vincent and the Grenadines,Saint Vincent and the Grenadines,St. Vincent and the Grenadines
+278,84.0,St. Lucia,Saint Lucia,Saint Lucia
+279,92.0,St. Kitts and Nevis,Saint Kitts and Nevis,St. Kitts and Nevis
+280,100.0,Moldova,Rep. of Moldova,Moldova
+281,100.0,"Korea, Rep.",Rep. of Korea,"Korea, Rep."
+282,64.0,Isle of Man,Norfolk Island,Norfolk Island
+283,67.0,Niger,Niue,Niue
+284,75.0,"Micronesia, Fed. Sts.",Micronesia (Federated States of),Micronesia (Federated States of)
+285,63.0,Mauritius,Martinique,Martinique
+286,89.0,"Korea, Dem. People’s Rep.",Lao People's Dem. Rep.,Lao People's Dem. Rep.
+287,60.0,Kazakhstan,Kyrgyzstan,Kyrgyzstan
+288,100.0,"Iran, Islamic Rep.",Islamic Rep. of Iran,"Iran, Islamic Rep."
+289,52.0,"Bahamas, The",Holy See (the),Holy See (the)
+290,100.0,"Gambia, The",Gambia,"Gambia, The"
+291,63.0,St. Martin (French part),French Guiana,French Guiana
+292,100.0,"Egypt, Arab Rep.",Egypt,"Egypt, Arab Rep."
+293,84.0,Dominican Republic,Dominican Rep.,Dominican Rep.
+294,100.0,"Congo, Dem. Rep.",Dem. Rep. of the Congo,"Congo, Dem. Rep."
+295,100.0,"Korea, Rep.",Dem. People's Rep. of Korea,"Korea, Rep."
+296,67.0,China,Czechia,Czechia
+297,92.0,Curacao,CuraÃ§ao,Curacao
+298,74.0,Channel Islands,Cook Islands,Cook Islands
+299,100.0,"Congo, Dem. Rep.",Congo,"Congo, Dem. Rep."
+300,88.0,Central African Republic,Central African Rep.,Central African Rep.
+301,96.0,Cote d'Ivoire,CÃ´te d'Ivoire,Cote d'Ivoire
+302,100.0,Bolivia,Bolivia (Plurinational State of),Bolivia
+303,100.0,"Bahamas, The",Bahamas,"Bahamas, The"
+304,71.0,Angola,Anguilla,Anguilla
+305,100.0,CuraÃ§ao,Curaçao,CuraÃ§ao
+306,100.0,Various,Various/Unknown,Various
+307,100.0,United States,United States of America,United States
+308,100.0,CÃ´te d'Ivoire,Côte d'Ivoire,CÃ´te d'Ivoire
+309,78.0,Czech Republic,Czech Rep.,Czech Rep.
+310,100.0,China,"China, Hong Kong SAR",China
+311,100.0,Serbia,Serbia and Kosovo (S/RES/1244 (1999)),Serbia
+312,94.0,The former Yugoslav Rep. of Macedonia,The former Yugoslav Republic of Macedonia,The former Yugoslav Rep. of Macedonia
+313,100.0,China,"China, Macao SAR",China
+314,100.0,"Iran, Islamic Rep.",Iran (Islamic Rep. of),"Iran, Islamic Rep."
+315,55.0,Niue,Bonaire,Bonaire
+316,64.0,Sierra Leone,Montserrat,Montserrat
+317,67.0,Estonia,Palestinian,Palestinian
