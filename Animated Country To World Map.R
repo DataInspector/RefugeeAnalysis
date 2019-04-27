@@ -16,7 +16,7 @@ options(digits = 9)
 #----Read Data---#
 
 Data <-
-  read.csv("CleanRefugeeTable.csv",
+  read.csv("RefugeeMovementData.csv",
            na.strings = c("NA", "NaN", " ", "", " ", "  "))
 Data <- Data[2:ncol(Data)]
 head(Data)

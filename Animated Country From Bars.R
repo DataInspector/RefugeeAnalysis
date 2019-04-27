@@ -16,7 +16,7 @@ options(digits = 9)
 #----Read Data---#
 
 Data <-
-  read.csv("CleanRefugeeTable.csv",
+  read.csv("RefugeeMovementData.csv",
            na.strings = c("NA", "NaN", " ", "", " ", "  "))
 
 Data <- Data[2:ncol(Data)]
@@ -41,18 +41,6 @@ CountryFromAgg <-
   ),
   c("Country", "Year", "Refugees"))
 
-#----Add 3 Year Rolling Yearly Average Column----#
-
-CountryFromAgg$Rolling <- NA
-CountryFromAgg <-
-  CountryFromAgg[order(CountryFromAgg$Country, CountryFromAgg$Year),]
-
-for (i in 3:nrow(CountryFromAgg)) {
-  temp <- CountryFromAgg[(i - 2):i,]
-  temp <- temp[temp$Country == CountryFromAgg$Country[i],]
-  CountryFromAgg$Rolling[i] <- as.integer(mean(temp$Refugees))
-}
-
 #----Create Data Frame With Top 10 Each Year----#
 
 Data2 <- CountryFromAgg %>%
@@ -63,27 +51,6 @@ Data2 <- CountryFromAgg %>%
   ungroup()
 
 Data2$Country <- as.factor(as.character(Data2$Country))
-
-#----Create Column With Labels Explaining Current Rolling Average Period---#
-
-Data2$YearLabels <- NA
-
-for (i in 3:nrow(Data2)) {
-  if (Data2$Country[i - 2] == Data2$Country[i]) {
-    Data2$YearLabels[i] <-
-      paste("Average", Data2$Year[i - 2], "-", Data2$Year[i])
-    
-  } else if (Data2$Country[i - 1] == Data2$Country[i]) {
-    Data2$YearLabels[i] <-
-      paste("Average", Data2$Year[i - 1], "-", Data2$Year[i])
-  } else {
-    Data2$YearLabels[i] <- paste("Average", Data2$Year[i])
-  }
-}
-
-Data2$YearLabels[1] <- paste("Average", Data2$Year[1])
-Data2$YearLabels[2] <-
-  paste("Average", Data2$Year[1], "-", Data2$Year[2])
 
 #----Add Column Showing Refugees With Formatting (,)---#
 
@@ -142,13 +109,7 @@ Data3$Country <- as.factor(as.character(Data3$Country))
 
 #----Create HEX Code Colour Lookup For Countries---#
 
-ColourLookup <-
-  setNames(as.data.frame(unique(c(
-    as.character(Data3$Country)
-  ))), "Country")
-coul = brewer.pal(4, "Spectral")
-ColourLookup$Colour <-
-  colorRampPalette(coul)(nlevels(ColourLookup$Country))
+ColourLookup <- read.csv("ColourLookup.csv")
 Data3$Colour <-
   ColourLookup$Colour[match(Data3$Country, ColourLookup$Country)]
 
@@ -162,7 +123,11 @@ Graphs <- ggplot(Data3, aes(
 )) + #Add Column Bar Chart With The Refugees
   geom_col(aes(y = Refugees), alpha = 1) +
   geom_text(
-    aes(y = 0, label = paste(Country, " ")),
+    aes(
+      y = 0,
+      label = paste(Country, " "),
+      colour = Colour
+    ),
     vjust = 0.2,
     hjust = 1,
     size = 8

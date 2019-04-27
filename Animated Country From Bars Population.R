@@ -8,6 +8,7 @@ library(stringr)
 library(leaflet)
 library(ggmap)
 library(gifski)
+library(scales)
 
 rm(list = ls())
 
@@ -16,7 +17,7 @@ options(digits = 9)
 #----Read Data---#
 
 Data <-
-  read.csv("CleanRefugeeTable.csv",
+  read.csv("RefugeeMovementData.csv",
            na.strings = c("NA", "NaN", " ", "", " ", "  "))
 
 Data <- Data[2:ncol(Data)]
@@ -43,22 +44,15 @@ CountryFromAgg <-
 
 #----Create % Of Population Column----#
 
-Data$temp <- paste(Data$Country, Data$Year)
-CountryFromAgg$temp <- paste(CountryFromAgg$Country, CountryFromAgg$Year)
-CountryFromAgg$Population <- Data$Population[match(CountryFromAgg$temp,Data$temp)]
-CountryFromAgg$Refugees <- CountryFromAgg$Refugees / CountryFromAgg$Population 
-
-#----Add 3 Year Rolling Yearly Average Column----#
-
-CountryFromAgg$Rolling <- NA
-CountryFromAgg <-
-  CountryFromAgg[order(CountryFromAgg$Country, CountryFromAgg$Year), ]
-
-for (i in 3:nrow(CountryFromAgg)) {
-  temp <- CountryFromAgg[(i - 2):i, ]
-  temp <- temp[temp$Country == CountryFromAgg$Country[i], ]
-  CountryFromAgg$Rolling[i] <- as.integer(mean(temp$Refugees))
-}
+Data <-
+  unique.data.frame(Data[c("CountryFrom", "Year", "CountryFromPopulation")])
+Data$temp <- paste(Data$CountryFrom, Data$Year)
+CountryFromAgg$temp <-
+  paste(CountryFromAgg$Country, CountryFromAgg$Year)
+CountryFromAgg$Population <-
+  Data$CountryFromPopulation[match(CountryFromAgg$temp, Data$temp)]
+CountryFromAgg$Refugees <-
+  CountryFromAgg$Refugees / CountryFromAgg$Population
 
 #----Create Data Frame With Top 10 Each Year----#
 
@@ -71,38 +65,15 @@ Data2 <- CountryFromAgg %>%
 
 Data2$Country <- as.factor(as.character(Data2$Country))
 
-#----Create Column With Labels Explaining Current Rolling Average Period---#
+#----Add Column Showing Refugees With Formatting (%)---#
 
-Data2$YearLabels <- NA
-
-for (i in 3:nrow(Data2)) {
-  if (Data2$Country[i - 2] == Data2$Country[i]) {
-    Data2$YearLabels[i] <-
-      paste("Average", Data2$Year[i - 2], "-", Data2$Year[i])
-    
-  } else if (Data2$Country[i - 1] == Data2$Country[i]) {
-    Data2$YearLabels[i] <-
-      paste("Average", Data2$Year[i - 1], "-", Data2$Year[i])
-  } else {
-    Data2$YearLabels[i] <- paste("Average", Data2$Year[i])
-  }
-}
-
-Data2$YearLabels[1] <- paste("Average", Data2$Year[1])
-Data2$YearLabels[2] <-
-  paste("Average", Data2$Year[1], "-", Data2$Year[2])
-
-#----Add Column Showing Refugees With Formatting (,)---#
-
-Data2$RefugeesFormatted <-
-  format(Data2$Refugees, big.mark = ",", scientific = FALSE)
+Data2$RefugeesFormatted <- percent(Data2$Refugees)
 
 #----Added Padding Spaces To Prevent Overlapping In Bar Chart----#
 Data2$RefugeesFormatted <-
   paste("  ", Data2$RefugeesFormatted, sep = "")
 
 #----Filter Data To Remove Sparse Years----#
-
 Data3 <- Data2[Data2$Year >= 1965, ]
 #Data3 <- Data2[Data2$Year > 1990 & Data2$Year < 2000,]
 
@@ -118,44 +89,14 @@ Data3$Year2 <- round(Data3$Year)
 
 #----Create Title Variable With Years For Moving Animation----#
 
-Data3$RefugeesSum1 <- as.character(paste("Refugees", Data3$Year2))
-
-#----Create Total Refugees Column With Total For Moving Animation----#
-
-Data3$RefugeesSum2 <-
-  as.character(paste(
-    "Total:",
-    str_pad(
-      string = as.character(trimws(
-        format(
-          sapply(
-            Data3$Year,
-            FUN = function(x) {
-              sum(Data3$Refugees[Data3$Year == x])
-            }
-          )
-          ,
-          big.mark = ",",
-          scientific = FALSE
-        )
-      )),
-      width = 10,
-      side = c("right"),
-      pad = " "
-    ),
-    sep = " "
-  ))
+Data3$RefugeesSum1 <-
+  as.character(paste("Refugees As A % Of \n", paste("Population", Data3$Year2)), sep =
+                 " ")
 Data3$Country <- as.factor(as.character(Data3$Country))
 
 #----Create HEX Code Colour Lookup For Countries---#
 
-ColourLookup <-
-  setNames(as.data.frame(unique(c(
-    as.character(Data3$Country)
-  ))), "Country")
-coul = brewer.pal(4, "Spectral")
-ColourLookup$Colour <-
-  colorRampPalette(coul)(nlevels(ColourLookup$Country))
+ColourLookup <- read.csv("ColourLookup.csv")
 Data3$Colour <-
   ColourLookup$Colour[match(Data3$Country, ColourLookup$Country)]
 
@@ -169,14 +110,18 @@ Graphs <- ggplot(Data3, aes(
 )) + #Add Column Bar Chart With The Refugees
   geom_col(aes(y = Refugees), alpha = 1) +
   geom_text(
-    aes(y = 0, label = paste(Country, " ")),
+    aes(
+      y = 0,
+      label = paste(Country, " "),
+      colour = Colour
+    ),
     vjust = 0.2,
     hjust = 1,
     size = 8
   ) + #Add Label Showing The Number Of Refugees For Each Country
   geom_text(aes(y = Refugees, label = as.character(RefugeesFormatted)),
             size = 8,
-            nudge_y = 400000) + #Add Label For Title Showing Current Year
+            nudge_y = 0.02) + #Add Label For Title Showing Current Year
   geom_text(
     aes(
       y = max(Data3$Refugees) * 0.475,
@@ -185,19 +130,7 @@ Graphs <- ggplot(Data3, aes(
       fontface = 2
     ),
     size = 12,
-    vjust = -2.5,
-    colour = "#8D8D8D",
-    check_overlap = TRUE
-  ) + #Add Label For Total Refugees In That Year
-  geom_text(
-    aes(
-      y = max(Data3$Refugees) * 0.13,
-      x = 1,
-      label = RefugeesSum2,
-      fontface = 2
-    ),
-    size = 10,
-    vjust = -3,
+    vjust = -0.9,
     colour = "#8D8D8D",
     check_overlap = TRUE
   ) + #Format Graph
@@ -207,7 +140,7 @@ Graphs <- ggplot(Data3, aes(
   annotate(
     "text",
     x = 1,
-    y = max(Data3$Refugees) * 0.82,
+    y = max(Data3$Refugees) * 0.85,
     label = "www.TheDataInspector.com",
     vjust = -5.5,
     colour = "#8D8D8D",
@@ -236,7 +169,7 @@ Graphs <- ggplot(Data3, aes(
       vjust = 5
     ),
     plot.background = element_blank(),
-    plot.margin = margin(3, 2, 2, 10, "cm")
+    plot.margin = margin(4, 2, 2, 10, "cm")
   ) + #Add Transition State Controlling Time Spent Moving And Time Spent At Data Point
   transition_states(Year, transition_length = 30, state_length = 20) + #Control If X & Y Axis Should Scale As Data Changes
   view_follow(fixed_x = TRUE, fixed_y = TRUE)
