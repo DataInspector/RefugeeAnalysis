@@ -1,20 +1,20 @@
-
 ### <center> **Refugee Analysis** </center>
 <br>
-This is visualisation of global refugee data from the years 1951-2017.
-
-The aim of this was to prepare the data and visualise it in an easily interpretable format
-
-The open data source comes from the link: 
-[Source Data Link](http://popstats.unhcr.org)
-
+This is A visualisation of global refugee data from the years 1951-2017.
+<br>
+The aim of this was to enhance, analyse and visualise the data in an easily interpretable format
 ___
 #### <center> **Project Status** </center>
-
-
-Further developments will include the visualisation and analysis of the data
+Further developments will include adding significant historic events to the data
 ___
-
+#### <center> **Structure** </center>
+The .ipynb scripts are part of the data engineering which includes pulling continents and population data in
+<br>
+The .R scripts are part of the data science process which includes geo-analytics & visualisation
+___
+#### <center> **Data Sources** </center>
+The open data source comes from the link: 
+[Source Data Link](http://popstats.unhcr.org)
+___
 #### <center> **Author** </center>
-
 [The Data Inspector](http://thedatainspector.com)
