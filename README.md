@@ -1,5 +1,6 @@
-<center> **Refugee Analysis** 
-
+<center> 
+ 
+ **Refugee Analysis** 
 <br>
 This is a visualisation of global refugee data from the years 1951-2017.
 <br>
