@@ -50,22 +50,22 @@ ContinentFromAgg <-
 ggplot(data = ContinentFromAgg, aes(x = Year, y = Refugees, fill = fct_rev(factor(Continent,levels = c("Asia","Africa","Europe","South America","North America","Australia","Oceania")))), show.legend = TRUE) + 
   geom_col() +
   labs(title = "Refugees From Continents") +
-  scale_y_continuous(labels = c(0,5,10,15,20),
+  scale_y_continuous(labels = c(0,"5 Mil","10 Mil","15 Mil","20 Mil"),
                      breaks = c(0,5000000,10000000,15000000,20000000)) +
   scale_x_continuous(breaks = c(1960,1970,1980,1990,2000,2010,2020)) +
   #scale_fill_brewer(name = "Continents",palette="Set1") +
   scale_fill_manual(name = "Continents", values = rev(brewer.pal(7, "Set1"))) +
   theme(
     legend.position = "bottom",
-    plot.title = element_text(      size = 30,
+    plot.title = element_text(      size = 20,
                                     hjust = 0.5,
                                     face = "bold",
                                     colour = "#8D8D8D"),
     #Change Plot Themes
     legend.title = element_text(face = "bold",
-                                colour = "#8D8D8D"),
+                                colour = "#8D8D8D",size = 15),
     legend.text = element_text(face = "bold",
-                               colour = "#8D8D8D"),
+                               colour = "#8D8D8D", size = 12),
     #axis.line = element_blank(),
     #axis.text.x = element_blank(),
     #axis.ticks.x = element_blank(),
